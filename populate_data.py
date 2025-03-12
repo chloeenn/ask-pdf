@@ -10,7 +10,7 @@ def load_documents():
     return document_loader.load()
 
 
-def split_document(documents: list[Document]):
+def split_documents(documents: list[Document]):
     text_splitter = RecursiveCharacterTextSplitter(
         separators=["\n\n", "\n", ' ', ''],
         chunk_size=1200,
